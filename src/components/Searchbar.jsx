@@ -6,10 +6,15 @@ const Searchbar = () => {
   const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
 
+  // Check if string is empty or contains whitespaces
+  const isEmptyOrSpaces = (str) => {
+    return /^\s*$/.test(str);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    navigate(`/search/${searchTerm}`);
+    if (!isEmptyOrSpaces(searchTerm)) navigate(`/search/${searchTerm}`);
   };
   return (
     <form
