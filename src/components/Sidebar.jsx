@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { HiOutlineMenu } from "react-icons/hi";
 
@@ -25,11 +25,17 @@ const NavLinks = ({ handleClick }) => (
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  const handleClick = () => {
+    setMobileMenuOpen(false);
+  };
+
   return (
     <>
       {/* Desktop Menu */}
       <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
-        <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
+        <Link to="/">
+          <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
+        </Link>
         <NavLinks />
       </div>
 
@@ -54,8 +60,10 @@ const Sidebar = () => {
           mobileMenuOpen ? "left-0" : "-left-full"
         }`}
       >
-        <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
-        <NavLinks handleClick={() => setMobileMenuOpen(false)} />
+        <Link to="/" onClick={handleClick}>
+          <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
+        </Link>
+        <NavLinks handleClick={handleClick} />
       </div>
     </>
   );
