@@ -1,7 +1,21 @@
 {
-  "name": "elagant-music-app",
+  "name": "lyriks-music-app",
   "private": true,
   "version": "0.0.0",
+  "author": "Sanidhya Kr. Verma",
+  "description": "Modern Music App using React JS",
+  "keywords": [
+    "reactjs",
+    "react",
+    "music-app",
+    "lyrics",
+    "music",
+    "js",
+    "javascript",
+    "html",
+    "css"
+  ],
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
