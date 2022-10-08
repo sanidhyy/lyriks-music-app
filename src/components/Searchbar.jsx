@@ -16,6 +16,7 @@ const Searchbar = () => {
 
     if (!isEmptyOrSpaces(searchTerm)) navigate(`/search/${searchTerm}`);
   };
+
   return (
     <form
       onSubmit={handleSubmit}
