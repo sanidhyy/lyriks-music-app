@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import { Searchbar, Sidebar, MusicPlayer, TopPlay } from "./components";
 import {
@@ -31,6 +31,7 @@ const App = () => {
               <Route path="/artists/:id" element={<ArtistDetails />} />
               <Route path="/songs/:songid" element={<SongDetails />} />
               <Route path="/search/:searchTerm" element={<Search />} />
+              <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </div>
           <div className="xl:sticky relative top-0 h-fit">
