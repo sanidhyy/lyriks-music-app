@@ -13,12 +13,8 @@ const AroundYou = () => {
 
   useEffect(() => {
     axios
-      .get(
-        `https://geo.ipify.org/api/v2/country?apiKey=${
-          import.meta.env.VITE_APP_GEOIPIFY_API_KEY
-        }`
-      )
-      .then((res) => setCountry(res?.data?.location?.country))
+      .get("http://ip-api.com/json")
+      .then((res) => setCountry(res?.data?.countryCode))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
   }, [country]);
