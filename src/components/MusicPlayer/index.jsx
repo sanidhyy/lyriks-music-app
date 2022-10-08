@@ -1,15 +1,21 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
-import { nextSong, prevSong, playPause } from '../../redux/features/playerSlice';
-import Controls from './Controls';
-import Player from './Player';
-import Seekbar from './Seekbar';
-import Track from './Track';
-import VolumeBar from './VolumeBar';
+import {
+  nextSong,
+  prevSong,
+  playPause,
+} from "../../redux/features/playerSlice";
+import Controls from "./Controls";
+import Player from "./Player";
+import Seekbar from "./Seekbar";
+import Track from "./Track";
+import VolumeBar from "./VolumeBar";
 
+// Music Player
 const MusicPlayer = () => {
-  const { activeSong, currentSongs, currentIndex, isActive, isPlaying } = useSelector((state) => state.player);
+  const { activeSong, currentSongs, currentIndex, isActive, isPlaying } =
+    useSelector((state) => state.player);
   const [duration, setDuration] = useState(0);
   const [seekTime, setSeekTime] = useState(0);
   const [appTime, setAppTime] = useState(0);
@@ -18,10 +24,12 @@ const MusicPlayer = () => {
   const [shuffle, setShuffle] = useState(false);
   const dispatch = useDispatch();
 
+  // play/pause on song click
   useEffect(() => {
     if (currentSongs.length) dispatch(playPause(true));
   }, [currentIndex]);
 
+  // handle play/pause
   const handlePlayPause = () => {
     if (!isActive) return;
 
@@ -32,6 +40,7 @@ const MusicPlayer = () => {
     }
   };
 
+  // handle next song
   const handleNextSong = () => {
     dispatch(playPause(false));
 
@@ -42,6 +51,7 @@ const MusicPlayer = () => {
     }
   };
 
+  // handle prev song
   const handlePrevSong = () => {
     if (currentIndex === 0) {
       dispatch(prevSong(currentSongs.length - 1));
@@ -54,8 +64,14 @@ const MusicPlayer = () => {
 
   return (
     <div className="relative sm:px-12 px-8 w-full flex items-center justify-between">
-      <Track isPlaying={isPlaying} isActive={isActive} activeSong={activeSong} />
+      {/* Track */}
+      <Track
+        isPlaying={isPlaying}
+        isActive={isActive}
+        activeSong={activeSong}
+      />
       <div className="flex-1 flex flex-col items-center justify-center">
+        {/* Controls */}
         <Controls
           isPlaying={isPlaying}
           isActive={isActive}
@@ -68,6 +84,7 @@ const MusicPlayer = () => {
           handlePrevSong={handlePrevSong}
           handleNextSong={handleNextSong}
         />
+        {/* Seekbar */}
         <Seekbar
           value={appTime}
           min="0"
@@ -76,6 +93,7 @@ const MusicPlayer = () => {
           setSeekTime={setSeekTime}
           appTime={appTime}
         />
+        {/* Player */}
         <Player
           activeSong={activeSong}
           volume={volume}
@@ -88,7 +106,14 @@ const MusicPlayer = () => {
           onLoadedData={(event) => setDuration(event.target.duration)}
         />
       </div>
-      <VolumeBar value={volume} min="0" max="1" onChange={(event) => setVolume(event.target.value)} setVolume={setVolume} />
+      {/* Volume bar */}
+      <VolumeBar
+        value={volume}
+        min="0"
+        max="1"
+        onChange={(event) => setVolume(event.target.value)}
+        setVolume={setVolume}
+      />
     </div>
   );
 };

@@ -1,10 +1,15 @@
-import Discover from './Discover';
-import TopArtists from './TopArtists';
-import ArtistDetails from './ArtistDetails';
-import SongDetails from './SongDetails';
-import Search from './Search';
-import TopCharts from './TopCharts';
-import AroundYou from './AroundYou';
+/**
+ * Add new pages in this file.
+ * Don't remove anything from here, if not sure
+ */
+
+import Discover from "./Discover";
+import TopArtists from "./TopArtists";
+import ArtistDetails from "./ArtistDetails";
+import SongDetails from "./SongDetails";
+import Search from "./Search";
+import TopCharts from "./TopCharts";
+import AroundYou from "./AroundYou";
 
 export {
   Discover,

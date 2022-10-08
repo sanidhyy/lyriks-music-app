@@ -1,5 +1,6 @@
 import SongBar from "./SongBar";
 
+// Related Songs
 const RelatedSongs = ({
   data,
   isPlaying,
@@ -9,8 +10,10 @@ const RelatedSongs = ({
   handlePlayClick,
 }) => (
   <div className="flex flex-col">
+    {/* Head */}
     <h1 className="font-bold text-3xl text-white">Related Songs</h1>
 
+    {/* Render each song */}
     <div className="mt-6 w-full flex flex-col">
       {data?.map((song, i) => (
         <SongBar

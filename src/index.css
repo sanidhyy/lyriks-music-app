@@ -11,6 +11,7 @@
   @apply text-cyan-500;
 }
 
+/* bar */
 .bar:nth-child(2) {
   animation-delay: 0.2s;
 }
@@ -27,6 +28,7 @@
   animation-delay: 1s;
 }
 
+/* transition */
 .smooth-transition {
   transition: all 0.3s ease-in-out;
 }

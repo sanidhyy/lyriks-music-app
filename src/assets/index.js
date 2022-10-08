@@ -1,7 +1,9 @@
-import loader from './loader.svg';
-import logo from './logo.svg';
+/**
+ * Add new assets in this file.
+ * Don't remove anything from here, if not sure
+ */
 
-export {
-  logo,
-  loader,
-};
+import loader from "./loader.svg";
+import logo from "./logo.svg";
+
+export { logo, loader };

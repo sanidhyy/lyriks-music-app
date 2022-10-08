@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 
+// Details Header
 const DetailsHeader = ({ artistId, artistData, songData }) => {
   const artist = artistData?.artists[artistId].attributes;
 
   return (
     <div className="relative w-full flex flex-col">
+      {/* Gradient */}
       <div className="w-full bg-graident-to-l from-transparent to-black sm:h-48 h-28" />
 
       <div className="absolute inset-0 flex items-center">
+        {/* Song/Artist Coverart */}
         <img
           src={
             artistId
@@ -19,9 +22,12 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
         />
 
         <div className="ml-5">
+          {/* Song/Artist Name */}
           <p className="font-bold sm:text-3xl text-xl text-white">
             {artistId ? artist?.name : songData?.title}
           </p>
+
+          {/* Artist Name */}
           {!artistId && (
             <Link to={`/artists/${songData?.artists[0].adamid}`}>
               <p className="text-base text-gray-400 mt-2">
@@ -30,6 +36,7 @@ const DetailsHeader = ({ artistId, artistData, songData }) => {
             </Link>
           )}
 
+          {/* Artist genre name */}
           <p className="text-base text-gray-400 mt-2">
             {artistId ? artist.genreNames[0] : songData?.genres?.primary}
           </p>

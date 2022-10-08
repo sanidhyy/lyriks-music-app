@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
+// Artist Card
 const ArtistCard = ({ track }) => {
   const navigate = useNavigate();
 
@@ -8,11 +9,14 @@ const ArtistCard = ({ track }) => {
       className="flex flex-col w-[250px] p-4 bg-white/5 bg-opacity-80 backdrop-blur-sm animte-slideup rounded-lg cursor-pointer"
       onClick={() => navigate(`/artists/${track?.artists[0].adamid}`)}
     >
+      {/* Artist Coverart */}
       <img
         src={track?.images?.coverart}
         alt={track?.subtitle}
         className="w-full h-56 rounded-lg"
       />
+
+      {/* Artist Name */}
       <p className="mt-4 font-semibold text-lg text-white truncate">
         {track?.subtitle}
       </p>

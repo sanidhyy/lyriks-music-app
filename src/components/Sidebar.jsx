@@ -6,8 +6,10 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { logo } from "../assets";
 import { links } from "../assets/constants";
 
+// Navbar Links
 const NavLinks = ({ handleClick }) => (
   <div className="mt-10">
+    {/* render each nav link */}
     {links.map((link) => (
       <NavLink
         key={link.name}
@@ -22,9 +24,11 @@ const NavLinks = ({ handleClick }) => (
   </div>
 );
 
+// Sidebar
 const Sidebar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
+  // handle menu click
   const handleClick = () => {
     setMobileMenuOpen(false);
   };
@@ -34,6 +38,7 @@ const Sidebar = () => {
       {/* Desktop Menu */}
       <div className="md:flex hidden flex-col w-[240px] py-10 px-4 bg-[#191624]">
         <Link to="/">
+          {/* Brand Logo */}
           <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
         </Link>
         <NavLinks />
@@ -61,6 +66,7 @@ const Sidebar = () => {
         }`}
       >
         <Link to="/" onClick={handleClick}>
+          {/* Brand Logo */}
           <img src={logo} alt="Lyriks" className="w-full h-14 object-contain" />
         </Link>
         <NavLinks handleClick={handleClick} />
