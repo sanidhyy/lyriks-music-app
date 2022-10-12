@@ -15,7 +15,7 @@ const AroundYou = () => {
   // fetch country code
   useEffect(() => {
     axios
-      .get("http://ip-api.com/json")
+      .get("https://ip-api.com/json")
       .then((res) => setCountry(res?.data?.countryCode))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
