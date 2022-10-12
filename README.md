@@ -1,136 +1,147 @@
-# Project Lyrics
+# Modern Music App using React JS
 
-Develop an elegant React.js Music Application. 
+![Modern Music App using React JS](https://user-images.githubusercontent.com/71302066/195332733-bc623d72-6b17-441c-a88e-2700c12c0f47.png "Modern Music App using React JS")
 
-Check out the complete project requirements [here](https://docs.google.com/document/d/13PeFwRlPEhMw_HPyrIrInvQuKaVWnpNmcv-y3NA208s/edit?usp=sharing)
+[![Ask Me Anything!](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/Technical-Shubham-tech "Ask Me Anything!")
+[![GitHub license](https://img.shields.io/github/license/Technical-Shubham-tech/lyriks-music-app)](https://github.com/Technical-Shubham-tech/lyriks-music-app/blob/main/LICENSE.md "GitHub license")
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/Technical-Shubham-tech/lyriks-music-app/commits/main "Maintenance")
+[![GitHub branches](https://badgen.net/github/branches/Technical-Shubham-tech/lyriks-music-app)](https://github.com/Technical-Shubham-tech/lyriks-music-app/branches "GitHub branches")
+[![Github commits](https://badgen.net/github/commits/Technical-Shubham-tech/lyriks-music-app/main)](https://github.com/Technical-Shubham-tech/lyriks-music-app/commits "Github commits")
+[![Netlify Status](https://api.netlify.com/api/v1/badges/397f3296-28d0-4daf-bb5e-32c1c75a1d16/deploy-status)](https://app-song.netlify.app/ "Netlify Status")
+[![GitHub issues](https://img.shields.io/github/issues/Technical-Shubham-tech/lyriks-music-app)](https://github.com/Technical-Shubham-tech/lyriks-music-app/issues "GitHub issues")
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Technical-Shubham-tech/lyriks-music-app)](https://github.com/Technical-Shubham-tech/lyriks-music-app/pulls "GitHub pull requests")
 
-# Contributing
+## ⚠️ Before you start
 
-When contributing to this repository, please first discuss the change you wish to make via issue.
-Please note we have a [code of conduct](CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+1. Make sure **Git** and **NodeJS** is installed
+2. Create .env file in root folder.
+3. Contents of **.env**
 
+```
+VITE_SHAZAM_CORE_RAPID_API_KEY=XXXXXXXXXXXXXXXXXX
+```
 
-## System Requirements
+4. Now, to setup API, go to [Rapid API Website](https://rapidapi.com/) and create an account.
 
-To get started with development, you need to install few tools
+5. Enable this API to fetch music data: [API: Shazam Core by Tipsters CO](https://rapidapi.com/tipsters/api/shazam-core/ "API: Shazam Core by Tipsters CO").
 
-1. git 
-   
-   `git` version 2.13.1 or higher. Download [git](https://git-scm.com/downloads) if you don't have it already.
+![Copy API Key](https://user-images.githubusercontent.com/71302066/195334520-929e4a98-2325-45a7-9525-68e4ed84d5fd.png "Copy API Key")
 
-   To check your version of git, run:
+6. After enabling you can get your API Keys and paste them in `.env` file in `VITE_SHAZAM_CORE_RAPID_API_KEY`.
 
-   ```shell
-    git --version
-   ```
+**NOTE:** Make sure you don't share these keys publicaly.
 
-2. node 
-   
-   `node` version 16.15.1 or higher. Download [node](https://nodejs.org/en/download/) if you don't have it already.
+## :pushpin: How to use this App?
 
-   To check your version of node, run:
+1. Clone this **repository** to your local computer.
+2. Open **terminal** in root directory.
+3. Type and Run `npm install` or `yarn install`.
+4. Once packages are installed, you can start this app using `npm start` or `yarn start`.
+5. Now app is fully configured and you can start using this app :+1:.
 
-   ```shell
-    node --version
-   ```
+## :camera: Screenshots:
 
-3. npm
-  
-   `npm` version 5.6.1 or higher. You will have it after you install node.
+![Modern UI/UX](https://user-images.githubusercontent.com/71302066/195338303-7388f2a1-41a2-449e-ad4e-db0006e69953.png "Modern UI/UX")
 
-   To check your version of npm, run:
+![View Top Artists](https://user-images.githubusercontent.com/71302066/195338557-3ee1d024-841e-4403-8605-dc9731097966.png "View Top Artists")
 
-   ```shell
-    npm --version
-   ```
+![Read Lyrics while Listening](https://user-images.githubusercontent.com/71302066/195339532-22b6d09f-a622-4ecd-ad21-5a5762bf1ac4.png "Read Lyrics while Listening")
 
-## Setup
+## :gear: Built with
 
-To set up a development environment, please follow these steps:
+[<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" width="150" height="40" />](https://www.javascript.com/ "JavaScript")
 
-1. Clone the repo
+[<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" width="150" />](https://reactjs.org/ "React JS")
 
-   ```shell
-    git clone https://github.com/JavaScript-Mastery-PRO/project1_team4_repository.git
-   ```
+[<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" width="150" />](https://tailwindcss.com/ "Tailwind CSS")
 
-2. Change directory to the project directory
+[<img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="Built with Love">](https://github.com/Technical-Shubham-tech/ "Built with Love")
 
-    ```shell
-    cd project1_team4_repository
-    ```
+## :wrench: Stats
 
-3. Install the dependencies
-   
-    ```shell
-     npm install
-    ```
+![Stats for this App](https://user-images.githubusercontent.com/71302066/195340258-01f5635d-fb2c-4dd2-877e-1785a270780a.svg "Stats for this App")
 
-    If you get an error, please check the console for more information.
+## :exclamation: Known Issues
 
-    If you don't get an error, you are ready to start development.
+Some people are encountering issue in which **Around You** Page is not working. This issue can be fixed from chrome settings by **allowing insecure content** for this site. Root cause for the issue is http and HTTPS mixed content site is served as http and netlify with https.
 
-4. Run the app
-   
-    ```shell
-    npm run dev
-    ```
+## :raised_hands: Contribute
 
-    Project will be running in the browser.
+You might encounter some bugs while using this app. You are more than welcome to contribute. Just submit changes via pull request and I will review them before merging. Make sure you follow community guidelines.
 
-    Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## :rocket: Follow Me
 
-## Issues
+[![GitHub followers](https://img.shields.io/github/followers/Technical-Shubham-tech?style=social&label=Follow&maxAge=2592000)](https://github.com/Technical-Shubham-tech "Follow Me")
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTechnicalShubam)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2FTechnical-Shubham-tech%2Fmedical-chat-app "Tweet")
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCNAz_hUVBG2ZUN8TVm0bmYw "Subscribe my Channel")
 
-You've found a bug in the source code, a mistake in the documentation or maybe you'd like a new feature? You can help us by [submitting an issue on GitHub](https://github.com/orgs/JavaScript-Mastery-PRO/projects/8). Before you create an issue, make sure to search the issue archive -- your issue may have already been addressed!
+## :star: Give A Star
 
-Please try to create bug reports that are:
+You can also give this repository a star to show more people and they can use this repository.
 
-- _Reproducible._ Include steps to reproduce the problem.
-- _Specific._ Include as much detail as possible: which version, what environment, etc.
-- _Unique._ Do not duplicate existing opened issues.
-- _Scoped to a Single Bug._ One bug per report.
+## :books: Available Scripts
 
+In the project directory, you can run:
 
-## Pull Request
+### `yarn start`
 
-There are 2 main work flows when dealing with pull requests:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-* Pull Request from a [forked repository](https://help.github.com/articles/fork-a-repo)
-* Pull Request from a branch within a repository
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Here we are going to focus on 2. Creating a Topical Branch:
+### `yarn test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-1. First, we will need to create a branch from the latest commit on master. Make sure your repository is up to date first using
+### `yarn build`
 
-   ```bash
-    git pull origin main
-   ```
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-   *Note:* `git pull` does a `git fetch` followed by a `git merge` to update the local repo with the remote repo. For a more detailed explanation, see [this stackoverflow post](http://stackoverflow.com/questions/292357/whats-the-difference-between-git-pull-and-git-fetch).
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-2. To create a branch, use `git checkout -b <new-branch-name> [<base-branch-name>]`, where `base-branch-name` is optional and defaults to `main`. 
-   
-   Use a standard convention for branch names. For example, `<your-name>-dev`. It will be easier to track your pull requests if you use this convention.
-   
-   I'm going to create a new branch called `jsm-dev` from the `main` branch and push it to github.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-   ```bash
-    git checkout -b jsm-dev main
-    git push origin jsm-dev
-   ```
+### `yarn eject`
 
-3. To create a pull request, you must have changes committed to your new branch.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-4. Go to [Pull Requests](https://github.com/JavaScript-Mastery-PRO/project1_team4_repository/pulls) and click on the `New Pull Request` button.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-5. Select the `main` branch as the `base` branch and the `jsm-dev` branch as the `compare` branch.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-6. Follow the template and fill in the proper information for the pull request.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-7. Click on the `Submit` button.
+## :page_with_curl: Learn More
 
-8. You have successfully created a pull request. Now wait for mentor approval. Once approved, you can merge the pull request.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-#
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
