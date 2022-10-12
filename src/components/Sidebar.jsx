@@ -2,6 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { RiCloseLine } from "react-icons/ri";
 import { HiOutlineMenu } from "react-icons/hi";
+import { AiFillGithub } from "react-icons/ai";
 
 import { logo } from "../assets";
 import { links } from "../assets/constants";
@@ -21,6 +22,15 @@ const NavLinks = ({ handleClick }) => (
         {link.name}
       </NavLink>
     ))}
+    <a
+      href="https://github.com/Technical-Shubham-tech/lyriks-music-app"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400"
+    >
+      <AiFillGithub className="w-6 h-6 mr-2" />
+      Source Code
+    </a>
   </div>
 );
 
