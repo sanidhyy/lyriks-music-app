@@ -23,7 +23,7 @@ const NavLinks = ({ handleClick }) => (
       </NavLink>
     ))}
     <a
-      href="https://github.com/Technical-Shubham-tech/lyriks-music-app"
+      href="https://github.com/sanidhyy/lyriks-music-app"
       target="_blank"
       rel="noopener noreferrer"
       className="flex flex-row justify-start items-center my-8 text-sm font-medium text-gray-400"
