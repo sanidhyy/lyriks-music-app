@@ -1,7 +1,7 @@
 ## Contributing
 
-[fork]: https://github.com/Technical-Shubham-tech/lyriks-music-app/fork
-[pr]: https://github.com/Technical-Shubham-tech/lyriks-music-app/compare
+[fork]: https://github.com/sanidhyy/lyriks-music-app/fork
+[pr]: https://github.com/sanidhyy/lyriks-music-app/compare
 [style]: https://standardjs.com/
 [code-of-conduct]: CODE_OF_CONDUCT.md
 
