@@ -39,6 +39,14 @@ VITE_SHAZAM_CORE_RAPID_API_KEY=XXXXXXXXXXXXXXXXXX
 4. Once packages are installed, you can start this app using `npm start` or `yarn start`.
 5. Now app is fully configured and you can start using this app :+1:.
 
+### :raising_hand: Need Help?
+
+If you run into issues during installation or setup:
+
+- **GitHub Discussions** — [Open a Q&A discussion](https://github.com/sanidhyy/lyriks-music-app/discussions/new?category=q-a) for setup and troubleshooting help.
+- **Email** — [sanidhyyy@gmail.com](mailto:sanidhyyy@gmail.com)
+- **Discord** — `sanidhyy`
+
 ## :camera: Screenshots:
 
 ![Modern UI/UX](https://user-images.githubusercontent.com/71302066/195338303-7388f2a1-41a2-449e-ad4e-db0006e69953.png "Modern UI/UX")
