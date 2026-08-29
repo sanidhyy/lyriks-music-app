@@ -13,23 +13,14 @@
 
 ## ⚠️ Before you start
 
-1. Make sure **Git** and **NodeJS** is installed
-2. Create .env file in root folder.
-3. Contents of **.env**
+1. Make sure **Git** and **NodeJS** is installed.
+2. No API keys are required. The app uses these public APIs:
+   - [iTunes Search API](https://performance-partners.apple.com/search-api) — search, lookup, and 30-second previews
+   - [Apple Music RSS](https://rss.marketingtools.apple.com/) — country and genre charts
+   - [LRCLIB](https://lrclib.net/docs) — lyrics
+3. Optional: copy `.env.example` to `.env`. It contains no secrets.
 
-```
-VITE_SHAZAM_CORE_RAPID_API_KEY=XXXXXXXXXXXXXXXXXX
-```
-
-4. Now, to setup API, go to [Rapid API Website](https://rapidapi.com/) and create an account.
-
-5. Enable this API to fetch music data: [API: Shazam Core by Tipsters CO](https://rapidapi.com/tipsters/api/shazam-core/ "API: Shazam Core by Tipsters CO").
-
-![Copy API Key](https://user-images.githubusercontent.com/71302066/195334520-929e4a98-2325-45a7-9525-68e4ed84d5fd.png "Copy API Key")
-
-6. After enabling you can get your API Keys and paste them in `.env` file in `VITE_SHAZAM_CORE_RAPID_API_KEY`.
-
-**NOTE:** Make sure you don't share these keys publicaly.
+**NOTE:** Song previews are 30-second clips from Apple. Full tracks open via the Apple Music link on the song details page.
 
 ## :pushpin: How to use this App?
 
@@ -71,7 +62,7 @@ If you run into issues during installation or setup:
 
 ## :exclamation: Known Issues
 
-Some people are encountering issue in which **Around You** Page is not working. This issue can be fixed from chrome settings by **allowing insecure content** for this site. Root cause for the issue is http and HTTPS mixed content site is served as http and netlify with https.
+Around You resolves your country over HTTPS (geojs, then ipwho.is, then timezone). If a country has no Apple Music chart, the app falls back to the US chart.
 
 ## :raised_hands: Contribute
 

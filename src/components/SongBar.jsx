@@ -28,8 +28,8 @@ const SongBar = ({
         src={
           artistId
             ? song?.attributes?.artwork?.url
-                .replace("{w}", "125")
-                .replace("{h}", "125")
+                ?.replace("{w}", "125")
+                ?.replace("{h}", "125")
             : song?.images?.coverart
         }
         alt={song?.title}

@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { DetailsHeader, Error, Loader, RelatedSongs } from "../components";
-import { useGetArtistDetailsQuery } from "../redux/services/shazamCore";
+import { useGetArtistDetailsQuery } from "../redux/services/musicApi";
 
 // Artist Details
 const ArtistDetails = () => {
@@ -27,7 +27,7 @@ const ArtistDetails = () => {
 
       {/* Related songs */}
       <RelatedSongs
-        data={Object.values(artistData?.songs)}
+        data={Object.values(artistData?.songs || {})}
         artistId={artistId}
         isPlaying={isPlaying}
         activeSong={activeSong}
