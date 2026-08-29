@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 import { Error, Loader, SongCard } from "../components";
-import { useGetTopChartsQuery } from "../redux/services/shazamCore";
+import { useGetTopChartsQuery } from "../redux/services/musicApi";
 
 // Top Charts
 const TopCharts = () => {
@@ -9,7 +9,7 @@ const TopCharts = () => {
   const { data, isFetching, error } = useGetTopChartsQuery();
 
   // loader
-  if (isFetching && loading) return <Loader title="Loading top charts" />;
+  if (isFetching) return <Loader title="Loading top charts" />;
 
   // error
   if (error) return <Error />;

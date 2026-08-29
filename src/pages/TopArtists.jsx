@@ -1,5 +1,5 @@
 import { ArtistCard, Loader, Error } from "../components";
-import { useGetTopChartsQuery } from "../redux/services/shazamCore";
+import { useGetTopChartsQuery } from "../redux/services/musicApi";
 
 // Top Artists
 const TopArtists = () => {

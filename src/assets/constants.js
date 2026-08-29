@@ -28,6 +28,24 @@ export const genres = [
   { title: "K-Pop", value: "K_POP" },
 ];
 
+// Apple iTunes RSS genre ids for Discover charts
+export const appleGenreIds = {
+  POP: 14,
+  HIP_HOP_RAP: 18,
+  DANCE: 17,
+  ELECTRONIC: 7,
+  SOUL_RNB: 15,
+  ALTERNATIVE: 20,
+  ROCK: 21,
+  LATIN: 12,
+  FILM_TV: 16,
+  COUNTRY: 6,
+  WORLDWIDE: 19,
+  REGGAE_DANCE_HALL: 24,
+  HOUSE: 17,
+  K_POP: 51,
+};
+
 // Navbar Links
 export const links = [
   { name: "Discover", to: "/", icon: HiOutlineHome },
