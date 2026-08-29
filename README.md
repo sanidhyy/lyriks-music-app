@@ -18,7 +18,6 @@
    - [iTunes Search API](https://performance-partners.apple.com/search-api) — search, lookup, and 30-second previews
    - [Apple Music RSS](https://rss.marketingtools.apple.com/) — country and genre charts
    - [LRCLIB](https://lrclib.net/docs) — lyrics
-3. Optional: copy `.env.example` to `.env`. It contains no secrets.
 
 **NOTE:** Song previews are 30-second clips from Apple. Full tracks open via the Apple Music link on the song details page.
 
